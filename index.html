@@ -4,9 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  // YOUR HTML HERE
+  <!-- // YOUR HTML HERE -->
+  <div class="container">
+    <h1>Today's Weather</h1>
+    <div id="weather-data">
+      <h2><span id="temperature">Loading...</span></h2>
+      <h3>Wind Speed: <span id="wind-speed">Loading...</span></h3>
+      <h2><span id="timezone">Loading...</span></h2>
+      <h3>Last update: <span id="time">Loading...</span></h3>
+    </div>
+  </div>
+
+  <!-- Always remember that to put my css in my html direct i have to use the Style command or prompt -->
+  <style>
+
+body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #32363f, #99a9ac);
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      
+ }
+  .container{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 300px
+  }
+  #temperature{
+    font-size: xxx-large;
+  }
+
+  </style>
 
   <script src="./app.js"></script>
 </body>
